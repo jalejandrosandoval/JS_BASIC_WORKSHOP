@@ -7,4 +7,4 @@ Jhon Alejandro Sandoval Miranda...
 
 ## Talleres del Diplomado ->
 
-* Taller # 1: Taller # 1 de JS.
+* Taller_N_1: Taller # 1 de JS.
