@@ -5,6 +5,6 @@ Course JS Basic...
 
 Jhon Alejandro Sandoval Miranda...
 
-## Prácticas del Diplomado ->
+## Talleres del Diplomado ->
 
 * Taller # 1: Taller # 1 de JS.
