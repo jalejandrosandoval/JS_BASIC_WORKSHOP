@@ -1,6 +1,6 @@
 'use strict';
 
-// Operadores Condicionales IF - Else...
+// Ejercicio # 1 ...
 
 let _style = `font-family; color:#ffc107; 
             background:#162c40;
