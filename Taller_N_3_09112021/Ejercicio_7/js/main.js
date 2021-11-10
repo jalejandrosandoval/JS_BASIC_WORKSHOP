@@ -14,19 +14,19 @@ let _style = `font-family; color:#ffc107;
             border-radius: 5px;
             font-weight: 700`;
             
-let num1 = parseInt(prompt(`Ingrese el Número 1:`));
-let num2 = parseInt(prompt(`Ingrese el Número 2:`));
+let N = parseInt(prompt(`Ingrese el Número 1:`));
+let D = parseInt(prompt(`Ingrese el Número 2:`));
 
 let cont = 0;
 
-if(num1 % num2 ==0){
-    for(var i=0; i<num1; i++)
+if(N % D == 0){
+    for(var i=0; i<N; i++)
     {
-        if(num1 % i ==0)
-            cont++;
+        if(N % i == 0)
+            cont= cont + i;
     }
     console.group("------ Ejercicio # 7 ------");
-        cont == num1 ? console.log(`%cEl número ${num1} es perfecto.`, _style) :
-            console.log(`%cEl número ${num1}  no es perfecto.`, _style)
+        cont == N ? console.log(`%cEl número ${N} es perfecto.`, _style) :
+            console.log(`%cEl número ${N} no es perfecto.`, _style)
     console.groupEnd();
 }
