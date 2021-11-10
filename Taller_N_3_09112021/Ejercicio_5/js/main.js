@@ -9,6 +9,7 @@ let _style = `font-family; color:#ffc107;
             padding: 3px;
             border-radius: 5px;
             font-weight: 700`;
+            
 console.group("------ Ejercicio # 5 ------");
     let cont = 1;
     for(var i=0; i<200; i=i+2){
