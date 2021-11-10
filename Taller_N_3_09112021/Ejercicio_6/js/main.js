@@ -1,6 +1,9 @@
 'use strict';
 
-// Operadores Condicionales IF - Else...
+/* Ejercicio # 6 ...
+    Realizar un programa que lea N números, calcule y escriba 
+    la suma de los pares y el producto de los impares.
+*/
 
 let _style = `font-family; color:#ffc107; 
             background:#162c40;
@@ -8,9 +11,28 @@ let _style = `font-family; color:#ffc107;
             border-radius: 5px;
             font-weight: 700`;
 
-let _age = parseInt(prompt(`Ingrese la edad:`));
+let tam = parseInt(prompt(`Cantidad de Números a Leer:`));
+Calculate(tam); 
 
-console.group("Operadores Condicionales IF - Else...");
-    _age >=18 ? console.log(`%cEs mayor de Edad`, _style) :
-        console.log(`%cLa edad ingresada no cumple con los parámetros..`, _style);
-console.groupEnd();
+function Calculate(_tam){
+
+    let contSum = 0, contProd = 1;
+    let _numbers = new Array(_tam).fill(null);
+    
+    for(var i=0; i<_tam; i++){
+        let num = parseInt(prompt(`Ingrese el Número ${i+1}:`));
+        _numbers[i] = num;
+    }
+
+    for(var i=0; i<_tam; i++){
+        if(_numbers[i] % 2 === 0)
+            contSum = contSum + _numbers[i];
+        else
+            contProd = contProd * _numbers[i];
+    }
+
+    console.group("------ Ejercicio # 6 ------");
+        console.log(`%cEl producto de la suma de los pares es ${contSum} y el producto de los impares es ${contProd}.`, _style);
+    console.groupEnd();       
+
+}
