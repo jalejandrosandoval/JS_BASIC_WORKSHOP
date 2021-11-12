@@ -20,7 +20,7 @@ let contSum = 0;
 for(var D=0; D<N; D++)
 {
     if(N % D == 0)
-        contSum = contSum + D;
+        contSum += D;
 }
 
 console.group("------ Ejercicio # 7 ------");
