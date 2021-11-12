@@ -14,20 +14,16 @@ let _style = `font-family; color:#ffc107;
             border-radius: 5px;
             font-weight: 700`;
             
-let N = parseInt(prompt(`Ingrese el Número 1:`));
-let D = parseInt(prompt(`Ingrese el Número 2:`));
+let N = parseInt(prompt(`Ingrese el Número a verificar:`));
+let contSum = 0;
 
-let cont = 0;
-
-if(N % D == 0){
-    for(var i=0; i<N; i++)
-    {
-        if(N % i == 0)
-            cont = cont + i;
-    }
+for(var D=0; D<N; D++)
+{
+    if(N % D == 0)
+        contSum = contSum + D;
 }
 
 console.group("------ Ejercicio # 7 ------");
-    (cont == N) ? console.log(`%cEl número ${N} es perfecto.`, _style) :
+    (contSum == N) ? console.log(`%cEl número ${N} es perfecto.`, _style) :
         console.log(`%cEl número ${N} no es perfecto.`, _style);
 console.groupEnd();
