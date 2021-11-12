@@ -23,10 +23,11 @@ if(N % D == 0){
     for(var i=0; i<N; i++)
     {
         if(N % i == 0)
-            cont= cont + i;
+            cont = cont + i;
     }
-    console.group("------ Ejercicio # 7 ------");
-        cont == N ? console.log(`%cEl número ${N} es perfecto.`, _style) :
-            console.log(`%cEl número ${N} no es perfecto.`, _style)
-    console.groupEnd();
 }
+
+console.group("------ Ejercicio # 7 ------");
+    (cont == N) ? console.log(`%cEl número ${N} es perfecto.`, _style) :
+        console.log(`%cEl número ${N} no es perfecto.`, _style);
+console.groupEnd();
